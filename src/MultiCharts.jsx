@@ -15,14 +15,13 @@ function MultiCharts({ Country, param }) {
 
     console.log(data["PopFemale"]);
 
+
     const margin = { top: 10, right: 30, bottom: 30, left: 40 },
       width = 1200 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
-    d3.select("#line_viz").selectChildren("*").remove();
-
     const svg = d3
-      .select("#line_viz")
+      .select(".line_viz")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
@@ -80,7 +79,7 @@ function MultiCharts({ Country, param }) {
   return (
     <div>
       <div className="line-charts">
-        <svg id="line_viz"></svg>
+        <svg className="line_viz"></svg>
       </div>
     </div>
   );
