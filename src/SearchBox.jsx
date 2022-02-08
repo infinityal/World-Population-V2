@@ -2,8 +2,8 @@ import * as React from 'react';
 
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import countryData from "/src/data/countries.js"
-import continentData from "/src/data/continents.js"
+import countryData from "./data/countries"
+import continentData from "./data/continents.js"
 
 
 function SearchBox({country, setCountry}) {

@@ -5,6 +5,7 @@ import Divider from '@mui/material/Divider';
 import Chart from './Chart';
 import SearchBox from './SearchBox';
 import { useState } from 'react';
+import MultiCharts from './MultiCharts';
 
   
 function App() {
@@ -21,6 +22,7 @@ function App() {
       </div>
       <Chart Country={country}/>
       <Divider/>
+      <MultiCharts Country={country} param={"PopFemale"}/>
       <section id='writeup_section'>
         <h2>Write-Up Section</h2>
         
