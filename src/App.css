@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height: max-content;
+  width: max-content;
   background-color: #f1f0ed;
   /*background-image: url(src/img/BG_PaperTexture_2.jpg)*/
 }
