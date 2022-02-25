@@ -49,12 +49,12 @@ function App() {
             <MultiCharts Country={country} param={param} />
           </div>
           <Divider />
-          <div>
+          {/*<div>
             <BarChart Year={year} Country={country} />
             <div className="slider">
               <Slider year={year} setYear={setYear}/>
             </div>
-          </div>
+          </div>*/}
           <Divider />
           {/*<div className="donut">
             <Donut_1950 Time={"1950"}/>
@@ -62,7 +62,15 @@ function App() {
           </div>*/}
           <section id="writeup_section">
             <h2>Write-Up Section</h2>
+            <p>
+              It's surprising to see that countries nowadays with most population are having
+              descending trend, such as China, United States, and within a few years, India.
+              And those less developed countries such as Nigeria, on the other hand, is started 
+              to experience a stable population increase, and predictably surpass most developed 
+              countries.
+            </p>
           </section>
+          <Divider />
         </div>
       </Route>
     </Switch>
